@@ -22,7 +22,7 @@ const addressSchema = z.object({
   city: z.string().min(2, "City required"),
   state: z.string().min(2, "State required"),
   zipCode: z.string().min(4, "ZIP code required"),
-  country: z.string().default("India"),
+  country: z.string(),
 });
 
 type AddressForm = z.infer<typeof addressSchema>;

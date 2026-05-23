@@ -163,7 +163,7 @@ export default function AdminDashboard() {
                 <YAxis tick={{ fontSize: 12 }} className="text-slate-500" />
                 <Tooltip
                   contentStyle={{ background: "#1e293b", border: "none", borderRadius: "12px", color: "#fff" }}
-                  formatter={(value: any, name: string) => [
+                  formatter={(value: any, name: any) => [
                     name === "Revenue" ? `₹${value.toLocaleString("en-IN")}` : value,
                     name
                   ]}
